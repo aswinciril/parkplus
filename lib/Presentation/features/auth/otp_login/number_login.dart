@@ -5,6 +5,7 @@ import 'package:parkplus/Presentation/features/auth/otp_login/otp_page.dart';
 import 'package:parkplus/Presentation/widgets/Buttons/custom_button.dart';
 import 'package:parkplus/Presentation/widgets/Icons/app_icon.dart';
 import 'package:parkplus/Presentation/widgets/Text/custom_text.dart';
+import 'package:parkplus/utils/colors.dart';
 
 class NumberLoginPage extends StatelessWidget {
   const NumberLoginPage({super.key});
@@ -27,7 +28,7 @@ class NumberLoginPage extends StatelessWidget {
                 textStyle: TextStyle(
                     fontSize: 48.sp,
                     // fontFamily: 'Roboto-Black',
-                    color: const Color.fromRGBO(84, 223, 108, 1),
+                    color: primaryGreen,
                     fontWeight: FontWeight.w700),
               ),
             ),
@@ -51,6 +52,7 @@ class NumberLoginPage extends StatelessWidget {
                         color: Color.fromRGBO(36, 161, 17, 0.678)),
                   ),
                   hintText: 'Enter your number',
+                  hintStyle: const TextStyle(fontWeight: FontWeight.w300),
                 ),
               ),
             ),
@@ -70,7 +72,7 @@ class NumberLoginPage extends StatelessWidget {
                   text: "Sign Up",
                   fontWeight: FontWeight.w900,
                   fontsize: 14.sp,
-                  color: const Color.fromRGBO(84, 223, 108, 1),
+                  color: primaryGreen,
                 )
               ],
             ),
