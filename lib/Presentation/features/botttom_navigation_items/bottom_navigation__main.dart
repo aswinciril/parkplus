@@ -20,43 +20,47 @@ class _BottomNavigationPageState extends State<BottomNavigationPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: _buildBody(), // Show content based on selected index
-      bottomNavigationBar: BottomNavigationBar(
-        items: const <BottomNavigationBarItem>[
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.home_outlined,
-              size: 33,
+    return PopScope(
+      onPopInvoked: (didPop) {},
+      canPop: false,
+      child: Scaffold(
+        body: _buildBody(), // Show content based on selected index
+        bottomNavigationBar: BottomNavigationBar(
+          items: const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.home_outlined,
+                size: 33,
+              ),
+              label: 'Home',
             ),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.local_taxi_outlined,
-              size: 33,
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.local_taxi_outlined,
+                size: 33,
+              ),
+              label: 'My Parking',
             ),
-            label: 'My Parking',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.person_2_outlined,
-              size: 33,
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.person_2_outlined,
+                size: 33,
+              ),
+              label: 'Account',
             ),
-            label: 'Account',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(
-              Icons.logout_outlined,
-              size: 33,
+            BottomNavigationBarItem(
+              icon: Icon(
+                Icons.logout_outlined,
+                size: 33,
+              ),
+              label: 'Logout',
             ),
-            label: 'Logout',
-          ),
-        ],
-        currentIndex: _selectedIndex,
-        selectedItemColor: Color.fromARGB(255, 0, 0, 0),
-        unselectedItemColor: Colors.grey,
-        onTap: _onItemTapped,
+          ],
+          currentIndex: _selectedIndex,
+          selectedItemColor: Color.fromARGB(255, 0, 0, 0),
+          unselectedItemColor: Colors.grey,
+          onTap: _onItemTapped,
+        ),
       ),
     );
   }

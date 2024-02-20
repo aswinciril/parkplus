@@ -11,12 +11,15 @@ class HomeContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        SizedBox(
-          width: 330.w,
-          height: 188.h,
-          child: Image.asset(
-            "assets/images/parkingcontainerimage.png",
-            fit: BoxFit.fill,
+        ClipRRect(
+          borderRadius: BorderRadius.circular(20),
+          child: SizedBox(
+            width: 310.w,
+            height: 188.h,
+            child: Image.asset(
+              "assets/images/carparking.jpg",
+              fit: BoxFit.fill,
+            ),
           ),
         ),
         Positioned(

@@ -5,7 +5,10 @@ import 'package:parkplus/controller/auth/timer_controller.dart';
 import 'package:provider/provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  WidgetsFlutterBinding.ensureInitialized();
+  // Initialize the Google Maps plugin
+
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {

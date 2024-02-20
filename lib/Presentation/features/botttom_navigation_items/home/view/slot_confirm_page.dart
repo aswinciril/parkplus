@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:parkplus/Presentation/widgets/Buttons/custom_button.dart';
 import 'package:parkplus/Presentation/widgets/Text/custom_text.dart';
 import 'package:parkplus/utils/dialog_helper.dart';
-import 'package:provider/provider.dart';
 
 class SlotConfirmPage extends StatelessWidget {
   const SlotConfirmPage({super.key});
@@ -28,7 +26,7 @@ class SlotConfirmPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Image.asset(
-            "assets/images/parkingcontainerimage.png",
+            "assets/images/carparking.jpg",
             fit: BoxFit.cover,
             height: 0.5.sh,
             // 60% of screen height

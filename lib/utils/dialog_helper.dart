@@ -11,6 +11,7 @@ void showLocationDialog(
 ) {
   showDialog(
     context: context,
+    barrierDismissible: false,
     builder: (BuildContext context) {
       return SizedBox(
         width: MediaQuery.of(context).size.width * 0.9,
@@ -23,10 +24,6 @@ void showLocationDialog(
               color: const Color.fromARGB(255, 76, 76, 76)),
           actions: [
             Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-              NoContainer(notext: "Cancel"),
-              SizedBox(
-                width: 13.sp,
-              ),
               YesContainer(
                 onpressedyes: onpressed,
                 yestext: "Allow",
