@@ -7,18 +7,22 @@ import 'package:parkplus/Presentation/widgets/Text/custom_text.dart';
 import 'package:parkplus/utils/dialog_helper.dart';
 
 class MyParking extends StatelessWidget {
-  const MyParking({Key? key});
+  const MyParking({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         centerTitle: false,
-        title: CustomText(
-          text: "My Parking History",
-          fontWeight: FontWeight.w600,
-          fontsize: 28.sp,
-          color: Colors.black,
+        title: Padding(
+          padding: const EdgeInsets.only(left: 15.0),
+          child: CustomText(
+            text: "My Parking History",
+            fontWeight: FontWeight.w600,
+            fontsize: 28.sp,
+            color: Colors.black,
+          ),
         ),
       ),
       body: Column(
