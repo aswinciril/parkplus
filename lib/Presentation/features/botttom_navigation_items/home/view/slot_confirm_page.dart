@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:parkplus/Presentation/features/botttom_navigation_items/home/view/slots_page.dart';
 import 'package:parkplus/Presentation/widgets/Text/custom_text.dart';
 import 'package:parkplus/utils/dialog_helper.dart';
 
@@ -48,7 +49,7 @@ class SlotConfirmPage extends StatelessWidget {
                   height: 50.h,
                 ),
                 CustomText(
-                    text: "slot :D3",
+                    text: "slot :B",
                     fontWeight: FontWeight.w400,
                     fontsize: 18.sp,
                     color: Colors.black),

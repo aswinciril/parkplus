@@ -36,11 +36,16 @@ void showLocationDialog(
   );
 }
 
-class YesContainer extends StatelessWidget {
+class YesContainer extends StatefulWidget {
   YesContainer({super.key, required this.yestext, required this.onpressedyes});
   final String yestext;
   Function() onpressedyes;
 
+  @override
+  State<YesContainer> createState() => _YesContainerState();
+}
+
+class _YesContainerState extends State<YesContainer> {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -48,9 +53,9 @@ class YesContainer extends StatelessWidget {
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20.0), color: primaryGreen),
       child: TextButton(
-          onPressed: onpressedyes,
+          onPressed: widget.onpressedyes,
           child: CustomText(
-              text: yestext,
+              text: widget.yestext,
               fontWeight: FontWeight.w500,
               fontsize: 16.sp,
               color: Color.fromARGB(255, 255, 255, 255))),

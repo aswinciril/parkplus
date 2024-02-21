@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:parkplus/Presentation/features/botttom_navigation_items/home/custom_widgets/home_container.dart';
 import 'package:parkplus/Presentation/features/botttom_navigation_items/home/view/slot_confirm_page.dart';
+import 'package:parkplus/Presentation/features/botttom_navigation_items/home/view/slots_page.dart';
 
 class HomeContainerList extends StatelessWidget {
   const HomeContainerList({super.key});
@@ -15,7 +16,7 @@ class HomeContainerList extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => SlotConfirmPage(),
+                      builder: (context) => SlotsPage(),
                     ));
               },
               child: const HomeContainer());

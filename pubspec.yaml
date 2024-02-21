@@ -43,6 +43,7 @@ dependencies:
   provider: ^6.1.1
   expandable_search_bar: ^0.0.2
   google_maps_flutter: ^2.2.8
+  flutter_rating_bar: ^4.0.1
 
 dev_dependencies:
   flutter_test:

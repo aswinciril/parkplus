@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:parkplus/Presentation/features/splash/splash_screen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:parkplus/controller/auth/timer_controller.dart';
+import 'package:parkplus/controller/home/parking_controller.dart';
 import 'package:provider/provider.dart';
 
 void main() {
@@ -19,6 +20,9 @@ class MyApp extends StatelessWidget {
       providers: [
         ChangeNotifierProvider(
           create: (context) => TimerProvider(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => ParkingProvider(),
         )
       ],
       child: ScreenUtilInit(
